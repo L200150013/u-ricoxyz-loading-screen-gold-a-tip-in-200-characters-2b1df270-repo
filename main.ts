@@ -6,3 +6,4 @@ const outDir = resolve(process.argv[2] ?? "./output");
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "entry.txt"), tip, "utf8");
 // Single line, no trailing newline: the tip is the entry.
+// Written in two messages so the entry's authorship is traceable.
